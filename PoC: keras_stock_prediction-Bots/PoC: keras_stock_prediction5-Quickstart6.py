@@ -1,25 +1,34 @@
 # Databricks notebook source
 # MAGIC %md
 # MAGIC # PoC
-# MAGIC ## notwendige Dateien sollten im Verzeichnis liegen
+# MAGIC notwendige Dateien sollten im Verzeichnis liegen
 # MAGIC - GBPUSD_M5_ab2019.01.21.csv     - OHLC-Candlestick Währungs-Wechselkurs Daten von USD gegen GBP
 # MAGIC - GBPUSD_M5_ab2019.01.21.csv.gz  - gespeicherte Normalisierungswerte der CSV
 # MAGIC - GBPUSD_M5_ab2019.01.21.csv.h5  - gespeichertes Neuronales-Netz (Tensorflow), um es nicht mit jedem Durchgang neu berechnen zu müssen
 # MAGIC - GBPUSD_M5_ab2019.01.21.csv.png - gespeicherte Plot-Ausgabe des Backtradings zu Demozwecken, Anzeige nur im Markdown
 # MAGIC - PoC_ keras_stock_prediction5-Quickstart6.py
 # MAGIC
-# MAGIC ## Config: 
+# MAGIC Config: 
 # MAGIC - notwendige Lib (siehe unten)
 # MAGIC   - Tensorflow 
 # MAGIC   - Backtrader 
 # MAGIC - Python 3.11.0rc1 ist ok
+# MAGIC
+# MAGIC GitHub: https://github.com/Howdi9/tf-stockprediction/tree/PoC/PoC%3A%20keras_stock_prediction-Bots
+# MAGIC
+# MAGIC # Ablauf
+# MAGIC Schritt 0: Config und Einrichtung
+# MAGIC
+# MAGIC Schritt 1: CSV (historischen 5min-Wechselkurse GBP-USD) trainiert ein Neuronales Netz via Keras-Tensorflow
+# MAGIC
+# MAGIC Schritt 2: NN wird mit identischer CSV verwendet um eine Tradingstrategie mit den zu testen.
 # MAGIC
 # MAGIC
 
 # COMMAND ----------
 
 # MAGIC %md 
-# MAGIC # Config und Einrichtung
+# MAGIC # Schritt 0: Config und Einrichtung
 # MAGIC - %sh funktioniert plötzlich nicht mehr, obwohl es immer funktionierte
 # MAGIC
 
@@ -73,7 +82,7 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC # keras_stock_prediction-5.py
+# MAGIC # Schritt 1: keras_stock_prediction-5.py
 
 # COMMAND ----------
 
@@ -325,7 +334,7 @@ plt.savefig('.' + CSV_FILE + ".png")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC # QuickstartSample6_Indicator.py
+# MAGIC # Schritt 2: QuickstartSample6_Indicator.py
 
 # COMMAND ----------
 
