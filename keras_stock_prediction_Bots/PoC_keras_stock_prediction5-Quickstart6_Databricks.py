@@ -257,7 +257,7 @@ if not WorkWithSavedNN:
 else:
     # Das Modell wird geladen, passiert ohne Output
     print("#######Model load")
-    stock_model= tf.keras.models.load_model('./' + CSV_FILE + ".h5")
+    stock_model= tf.keras.models.load_model('./' + CSV_FILE + "_Databricks.h5")
     print("#######Model load finished")
 
 # COMMAND ----------

@@ -1,0 +1,36 @@
+# Virtuelle Umgebungen
+.venv/
+#venv/
+#env/
+#ENV/
+
+# Python Bytecode
+#__pycache__/
+#*.py[cod]
+#*$py.class
+
+
+# Logs und Laufzeitdateien
+#*.log
+#pip-log.txt
+#pip-delete-this-directory.txt
+
+# Jupyter Notebooks zwischengespeicherte Daten
+.ipynb_checkpoints
+
+# IDE und Editor-Konfigurationen
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Systemdateien
+#.DS_Store
+#Thumbs.db
+
+# pyenv Version Datei (optional)
+#.python-version
+
+# Sonstige Umgebungsdateien
+#.env
+#.envrc
