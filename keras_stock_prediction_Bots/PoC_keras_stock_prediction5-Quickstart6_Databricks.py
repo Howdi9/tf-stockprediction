@@ -14,7 +14,7 @@
 # MAGIC   - Backtrader 
 # MAGIC - Python 3.11.0rc1 ist ok
 # MAGIC
-# MAGIC GitHub: https://github.com/Howdi9/tf-stockprediction/tree/PoC/PoC%3A%20keras_stock_prediction-Bots
+# MAGIC GitHub: https://github.com/Howdi9/tf-stockprediction
 # MAGIC
 # MAGIC # Ablauf
 # MAGIC Schritt 0: Config und Einrichtung
