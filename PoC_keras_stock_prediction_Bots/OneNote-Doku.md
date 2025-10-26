@@ -35,6 +35,4 @@ python setup.py install
 
 conda install scikit-learn
 	
-
-![image](https://github.com/user-attachments/assets/45671b2b-f37d-42fc-a45b-3a3e8ffbdae8)
-# Demo
+![image](OneNote-Doku.png)
